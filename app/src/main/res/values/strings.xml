@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">微信抢红包</string>
+    <string name="app_setting">设置</string>
+    <string name="accessibility_description">本插件只适用于微信 \n\n功能描述:\n\n\t\t\ta: 微信自助抢红包  \n\n使用说明:\n\n\t\t\t1. 点击系统辅助服务按钮\n\n\t\t\t2. 找到微信自动抢红包(无障碍或者直接就在辅助功能列表)，点击打开按钮\n\n\t\t\t3. 如果已经按钮已经打开，则关闭重新打开按钮，弹出提示微信自动抢红包服务开启,则成功开启自动抢红包插件   \n\n注意事项:\n\n\t\t\t1. 微信的版本升级,可能导致功能无法正常运转\n\n\t\t\t2. 部分手机会有兼容性问题,可能无法正常运转\n\n\t\t\t3. 自动抢红包不能锁屏，并且微信要处于后台运行\n\n\t\t</string>
+    <string name="hint_hb_reply">请输入红包回复语</string>
+    <string name="text_reply">回复语：</string>
+    <string name="text_clear_record">清除红包记录</string>
+    <string name="text_reply_title">回复语</string>
+    <string name="text_how_to_use">如何使用</string>
+</resources>

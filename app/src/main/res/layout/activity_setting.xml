@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:rotation="45"
+        android:alpha="0.8"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_fu"/>
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:src="@mipmap/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_setting"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvReply"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/text_reply_title"
+        android:textColor="@color/txtColorGray"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/llTitle" />
+
+    <View
+        android:id="@+id/replyDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="160dp"
+        android:background="@color/line_gray"
+        app:layout_constraintTop_toBottomOf="@+id/tvReply" />
+
+    <TextView
+        android:id="@+id/tvUsage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/text_how_to_use"
+        android:textColor="@color/txtColorGray"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/replyDivider" />
+
+    <View
+        android:id="@+id/usageDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="130dp"
+        android:background="@color/line_gray"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsage" />
+
+</android.support.constraint.ConstraintLayout>
