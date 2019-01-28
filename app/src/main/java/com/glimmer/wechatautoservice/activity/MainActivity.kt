@@ -83,7 +83,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressWarnings("unused")
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onHBMsgEvent(event: HBMsgEvent) {
         saveRecordToLocal(event)
